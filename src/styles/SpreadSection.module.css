@@ -1,0 +1,11 @@
+.spreadgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+.spreadgrid {
+    grid-template-columns: 1fr;
+  }
+}
