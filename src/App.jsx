@@ -8,6 +8,7 @@ import SpreadSection from './components/SpreadSection.jsx'
 
 function App() {
   const [isDark, setIsDark] = useState(true)
+  const spreadData = [{era:"1182", title:"The Coinless Six Hundred", verse:"The coinless six hundred charged the gates"}, {era:"2025", title:"The Turnstile Generation", verse:"They're outside Parkhead wi' nae ticket"}]
   return (
   <div className={isDark ? 'dark' : 'light'}>
       <button onClick={() => setIsDark(!isDark)}>
@@ -16,16 +17,15 @@ function App() {
       <Hero />
       <Intro />
       <SpreadSection>
-      <SpreadCard
-        era="1182"
-        title="The Coinless Six Hundred"
-        verse="The coinless six hundred charged the gates"
-      />  
-        <SpreadCard
-        era="2025"
-        title="The Turnstile Generation"
-        verse="They're outside Parkhead wi' nae ticket"
-      />
+        {spreadData.map((spread) => {
+          return (
+            <SpreadCard
+            era={spread.era}
+            title={spread.title}
+            verse={spread.verse}
+       />    
+        )
+    })}
        </SpreadSection>
       
     </div>
@@ -33,5 +33,6 @@ function App() {
 }
 
 export default App
+
 
 

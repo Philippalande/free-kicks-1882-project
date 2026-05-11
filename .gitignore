@@ -1,3 +1,10 @@
+.env
+.env.locals
+.ipynb_checkpoints/
+__pycache__/
+
+
+
 # Logs
 logs
 *.log
