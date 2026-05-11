@@ -1,5 +1,5 @@
 # Free Kicks: Then & Now
-## Using Human-AI Collaboration to Bridge 143 Years of Glasgow Football Culture
+## Using Human-AI Collaboration to Bridge 144 Years of Glasgow Football Culture
 
 **2663879L — AI for the Arts (B), University of Glasgow, 2026**
 
